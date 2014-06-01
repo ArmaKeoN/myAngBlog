@@ -1,0 +1,28 @@
+﻿<h2 style="text-align: center;">Detail View</h2>
+
+<div class="well">
+    <!-- Default panel contents -->
+    <h4>{{blog.Title}}</h4>
+    <p>{{blog.Message}}</p>
+    <span>Date: {{blog.Time}}</span><br /><br />
+    <a style="cursor: pointer;" data-toggle="modal" data-target="#myModal">Edit</a>
+</div>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edit Blog</h4>
+            </div>
+            <div class="modal-body">
+                <span>Title: </span> <input class="form-control" type="text" id="Title" value="{{blog.Title}}" /><br /><br />
+                <span>Message: </span> <input class="form-control" type="text" id="Message" value="{{blog.Message}}" /><br /><br />
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <button type="button" class="btn btn-primary" ng-click="editBlog()" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

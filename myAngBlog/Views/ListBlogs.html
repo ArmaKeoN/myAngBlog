@@ -1,0 +1,11 @@
+﻿<h2 style="text-align: center;">Blogs</h2>
+<br />
+<div>
+    <div class="well" ng-repeat="blog in blogs">
+        <!-- Default panel contents -->
+        <h4>{{blog.Title}}</h4>
+        <span>Date: {{blog.Time}}</span><hr />
+        <a style="cursor: pointer;" ng-click="delBlog(blog.Id)">Delete</a> <span>|</span>
+        <a href="#/detailblog/{{blog.Id}}">View Blog</a>
+    </div>
+</div>

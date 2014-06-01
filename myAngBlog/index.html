@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html ng-app="myBlog" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>myAngBlog</title>
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Blogs</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/addblog">Add Blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown">myAngBlog<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div ng-view></div>
+    <br /><br />
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text">Created by Jonah Lozano</p>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-1.9.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
+    <script src="myAngBlogScripts/myAngBlogApp.js"></script>
+    <script src="myAngBlogScripts/ListController.js"></script>
+    <script src="myAngBlogScripts/DetailController.js"></script>
+    <script src="myAngBlogScripts/AddController.js"></script>
+
+</body>
+</html>
