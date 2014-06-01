@@ -13,7 +13,7 @@ myAngBlog.controller('DetailCtrl', function ($scope, $http, $routeParams) {
     })
 
     $scope.editBlog = function () {
-
+        //commit
         //$scope.blog.Title = $scope.Title;
         //$scope.blog.Message = $scope.Message;
 
